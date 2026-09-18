@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mahir Labib Chowdhury — Mechanical Design Engineer · CFD & Aerospace R&D</title>
-<meta name="description" content="Portfolio of Mahir Labib Chowdhury — mechanical design engineer specializing in CFD, aerospace aerodynamics, and CAD reverse-engineering. Dhaka, Bangladesh." />
+<title>Mahir Labib Chowdhury — Mechanical Engineer · CFD & Aerospace</title>
+<meta name="description" content="Portfolio of Mahir Labib Chowdhury — mechanical engineer specializing in computational fluid dynamics, turbulence modeling, and aerodynamic simulation. Dhaka, Bangladesh." />
 
 <!-- ============================================================= -->
-<!--  EDIT ME: update the personal links below (search the file    -->
-<!--  for "EDIT"). Drop project figures into an /assets folder and  -->
-<!--  swap the <div class="fig"> placeholders for <img> — see the   -->
-<!--  README. Add your CV as the PDF named in the résumé links.     -->
+<!--  Personal links are filled in. To use project images, drop    -->
+<!--  files in an /assets folder and swap a <div class="fig"> for   -->
+<!--  <img class="fig" src="assets/x.png" alt="...">. Add your CV    -->
+<!--  PDF named Mahir_Labib_Chowdhury_CV.pdf (see README).          -->
 <!-- ============================================================= -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,73 +19,27 @@
 
 <style>
   :root{
-    /* dark (default) */
-    --ink:#0A0F1A;
-    --ink-2:#0E1626;
-    --paper:#E9EFF7;
-    --slate:#8FA2BC;
-    --slate-2:#5E7189;
-    --line:#1B2A40;
-    --line-2:#233450;
-    --cyan:#37E0C4;        /* graphic accent (buttons, borders, canvas) */
-    --cyan-tx:#37E0C4;     /* text accent */
-    --amber-tx:#F6A623;
-    --ember:#FF5E43;       /* graphic hot accent */
-    --ember-tx:#FF5E43;    /* text hot accent */
-    --focus:#7DE3FF;
-    --nav-bg:rgba(10,15,26,.72);
-    --mask-1:rgba(10,15,26,.35);
-    --mask-2:rgba(10,15,26,.86);
-    --btn-fg:#04140F;
+    --ink:#0A0F1A; --ink-2:#0E1626; --paper:#E9EFF7; --slate:#8FA2BC; --slate-2:#5E7189;
+    --line:#1B2A40; --line-2:#233450;
+    --cyan:#37E0C4; --cyan-tx:#37E0C4; --amber-tx:#F6A623; --ember:#FF5E43; --ember-tx:#FF5E43;
+    --focus:#7DE3FF; --nav-bg:rgba(10,15,26,.72);
+    --mask-1:rgba(10,15,26,.35); --mask-2:rgba(10,15,26,.86); --btn-fg:#04140F;
   }
   html[data-theme="light"]{
-    --ink:#EDF1F7;
-    --ink-2:#FFFFFF;
-    --paper:#0D1826;
-    --slate:#51617A;
-    --slate-2:#8494A8;
-    --line:#D7DFEA;
-    --line-2:#C3CEDC;
-    --cyan:#10B79D;
-    --cyan-tx:#0A7C6A;
-    --amber-tx:#A96A00;
-    --ember:#E8542F;
-    --ember-tx:#CB3E22;
-    --nav-bg:rgba(237,241,247,.80);
-    --mask-1:rgba(237,241,247,.28);
-    --mask-2:rgba(237,241,247,.82);
-    --btn-fg:#04140F;
+    --ink:#EDF1F7; --ink-2:#FFFFFF; --paper:#0D1826; --slate:#51617A; --slate-2:#8494A8;
+    --line:#D7DFEA; --line-2:#C3CEDC;
+    --cyan:#10B79D; --cyan-tx:#0A7C6A; --amber-tx:#A96A00; --ember:#E8542F; --ember-tx:#CB3E22;
+    --nav-bg:rgba(237,241,247,.80); --mask-1:rgba(237,241,247,.28); --mask-2:rgba(237,241,247,.82); --btn-fg:#04140F;
   }
-
   *{ box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
-
-  body{
-    margin:0;
-    background:var(--ink);
-    color:var(--paper);
-    font-family:"Inter",system-ui,sans-serif;
-    font-size:16px; line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-    transition:background .35s ease, color .35s ease;
-  }
-
-  body::before{
-    content:""; position:fixed; inset:0;
-    background-image:
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size:64px 64px; opacity:.22; pointer-events:none; z-index:0;
-  }
-
+  body{ margin:0; background:var(--ink); color:var(--paper); font-family:"Inter",system-ui,sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden; transition:background .35s ease, color .35s ease; }
+  body::before{ content:""; position:fixed; inset:0; background-image:linear-gradient(var(--line) 1px, transparent 1px),linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:64px 64px; opacity:.22; pointer-events:none; z-index:0; }
   .wrap{ max-width:1120px; margin:0 auto; padding:0 28px; position:relative; z-index:1; }
   a{ color:inherit; text-decoration:none; }
   ::selection{ background:var(--cyan); color:var(--btn-fg); }
-  .mono{ font-family:"IBM Plex Mono",ui-monospace,monospace; }
 
-  /* ---------- NAV ---------- */
   nav{ position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); background:var(--nav-bg); border-bottom:1px solid var(--line); }
   .nav-in{ display:flex; align-items:center; justify-content:space-between; height:60px; gap:18px; }
   .brand{ font-family:"IBM Plex Mono",monospace; font-size:13px; letter-spacing:.14em; color:var(--paper); white-space:nowrap; }
@@ -94,15 +48,10 @@
   .nav-links{ display:flex; gap:26px; }
   .nav-links a{ font-family:"IBM Plex Mono",monospace; font-size:12.5px; letter-spacing:.06em; color:var(--slate); transition:color .2s; }
   .nav-links a:hover{ color:var(--paper); }
-  .tbtn{
-    font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.04em;
-    color:var(--slate); background:transparent; border:1px solid var(--line-2);
-    border-radius:2px; padding:6px 11px; cursor:pointer; transition:color .2s, border-color .2s;
-  }
+  .tbtn{ font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.04em; color:var(--slate); background:transparent; border:1px solid var(--line-2); border-radius:2px; padding:6px 11px; cursor:pointer; transition:color .2s, border-color .2s; }
   .tbtn:hover{ color:var(--cyan-tx); border-color:var(--cyan); }
-  @media (max-width:720px){ .nav-links{ display:none; } }
+  @media (max-width:760px){ .nav-links{ display:none; } }
 
-  /* ---------- HERO ---------- */
   header{ position:relative; padding:76px 0 40px; }
   #flow{ position:absolute; inset:0; width:100%; height:100%; z-index:0; opacity:.9; }
   .hero-mask{ position:absolute; inset:0; z-index:1; background:radial-gradient(120% 90% at 20% 30%, var(--mask-1), var(--mask-2) 70%); pointer-events:none; }
@@ -110,7 +59,7 @@
   .eyebrow{ font-family:"IBM Plex Mono",monospace; font-size:12.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--cyan-tx); margin:0 0 18px; }
   h1{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:clamp(40px,7vw,84px); line-height:.98; letter-spacing:-.02em; margin:0 0 10px; max-width:12ch; }
   .h1-sub{ font-family:"Space Grotesk",sans-serif; font-weight:500; font-size:clamp(19px,2.4vw,26px); color:var(--slate); margin:0 0 26px; letter-spacing:-.01em; }
-  .lede{ max-width:620px; font-size:17px; color:var(--paper); margin:0 0 30px; }
+  .lede{ max-width:640px; font-size:17px; color:var(--paper); margin:0 0 30px; }
   .lede .hi{ color:var(--cyan-tx); }
   .cta-row{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
   .btn{ display:inline-flex; align-items:center; gap:9px; font-family:"IBM Plex Mono",monospace; font-size:13px; letter-spacing:.03em; padding:12px 20px; border-radius:2px; transition:transform .15s, background .2s, border-color .2s, color .2s; }
@@ -119,7 +68,6 @@
   .btn-ghost{ border:1px solid var(--line-2); color:var(--paper); }
   .btn-ghost:hover{ border-color:var(--cyan); color:var(--cyan-tx); }
 
-  /* ---------- READOUT ---------- */
   .readout{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--ink-2); }
   .readout-in{ display:grid; grid-template-columns:repeat(4,1fr); }
   .stat{ padding:22px 20px; border-right:1px solid var(--line); }
@@ -127,18 +75,16 @@
   .stat .v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:26px; letter-spacing:-.01em; }
   .stat .v .u{ color:var(--cyan-tx); }
   .stat .k{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; color:var(--slate); text-transform:uppercase; margin-top:4px; }
-  @media (max-width:720px){ .readout-in{ grid-template-columns:repeat(2,1fr); } .stat:nth-child(2){ border-right:none; } .stat:nth-child(1),.stat:nth-child(2){ border-bottom:1px solid var(--line); } }
+  @media (max-width:760px){ .readout-in{ grid-template-columns:repeat(2,1fr); } .stat:nth-child(2){ border-right:none; } .stat:nth-child(1),.stat:nth-child(2){ border-bottom:1px solid var(--line); } }
 
-  /* ---------- SECTION SHELL ---------- */
   section{ padding:88px 0; border-bottom:1px solid var(--line); }
   .sta{ display:flex; align-items:baseline; gap:16px; margin-bottom:40px; }
   .sta .no{ font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.14em; color:var(--ember-tx); }
   .sta h2{ font-family:"Space Grotesk",sans-serif; font-weight:600; font-size:clamp(26px,4vw,38px); letter-spacing:-.01em; margin:0; }
   .sta .rule{ flex:1; height:1px; background:var(--line-2); align-self:center; }
-  .intro{ max-width:680px; color:var(--slate); font-size:17px; margin:0 0 34px; }
+  .intro{ max-width:700px; color:var(--slate); font-size:17px; margin:0 0 34px; }
   .intro strong{ color:var(--paper); font-weight:500; }
 
-  /* ---------- CARDS ---------- */
   .grid{ display:grid; gap:18px; }
   .g-2{ grid-template-columns:repeat(2,1fr); }
   .g-3{ grid-template-columns:repeat(3,1fr); }
@@ -156,53 +102,43 @@
   .card.program{ border-left:2px solid var(--ember); }
   .card.program .tag{ color:var(--ember-tx); }
 
-  /* figure slot — swap for <img class="fig" ...> */
-  .fig{
-    display:flex; align-items:center; justify-content:center;
-    aspect-ratio:16/9; width:100%; margin:0 0 18px; border-radius:2px;
-    border:1px solid var(--line-2); object-fit:cover;
-    background-color:var(--ink);
-    background-image:
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size:22px 22px;
-  }
+  .fig{ display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; width:100%; margin:0 0 18px; border-radius:2px; border:1px solid var(--line-2); object-fit:cover; background-color:var(--ink); background-image:linear-gradient(var(--line) 1px, transparent 1px),linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size:22px 22px; }
   .fig .fig-cap{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; color:var(--slate-2); text-transform:uppercase; }
   img.fig{ background-image:none; }
 
-  /* ---------- ABOUT ---------- */
   .about-grid{ display:grid; grid-template-columns:1.4fr 1fr; gap:40px; }
   @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; gap:28px; } }
   .about-grid p{ font-size:17px; color:var(--paper); }
   .about-grid p .hi{ color:var(--cyan-tx); }
-  .now{ background:var(--ink-2); border:1px solid var(--line); border-radius:3px; padding:22px; }
-  .now .lbl{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--slate); margin-bottom:14px; }
-  .now-row{ display:flex; gap:12px; padding:11px 0; border-top:1px solid var(--line); }
-  .now-row:first-of-type{ border-top:none; }
-  .now-row .dot{ color:var(--cyan-tx); font-family:"IBM Plex Mono",monospace; }
-  .now-row .txt b{ font-weight:600; }
-  .now-row .txt span{ color:var(--slate); display:block; font-size:14px; }
+  .side{ display:flex; flex-direction:column; gap:18px; }
+  .panel{ background:var(--ink-2); border:1px solid var(--line); border-radius:3px; padding:22px; }
+  .panel .lbl{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--slate); margin-bottom:14px; }
+  .p-row{ display:flex; gap:12px; padding:11px 0; border-top:1px solid var(--line); }
+  .p-row:first-of-type{ border-top:none; }
+  .p-row .dot{ color:var(--cyan-tx); font-family:"IBM Plex Mono",monospace; }
+  .p-row .txt b{ font-weight:600; }
+  .p-row .txt span{ color:var(--slate); display:block; font-size:14px; }
+  .interests{ margin-top:22px; font-size:15px; color:var(--slate); }
+  .interests b{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ember-tx); display:block; margin-bottom:6px; }
 
-  /* ---------- PUBLICATIONS ---------- */
-  .pub{ padding:20px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:64px 1fr; gap:18px; }
+  .pub{ padding:20px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:74px 1fr; gap:18px; }
   .pub:first-of-type{ border-top:none; }
-  .pub .yr{ font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--ember-tx); padding-top:2px; }
-  .pub h3{ font-family:"Space Grotesk",sans-serif; font-weight:500; font-size:18px; margin:0 0 5px; }
-  .pub .meta{ font-size:14px; color:var(--slate); }
+  .pub .yr{ font-family:"IBM Plex Mono",monospace; font-size:12.5px; color:var(--ember-tx); padding-top:2px; }
+  .pub h3{ font-family:"Space Grotesk",sans-serif; font-weight:500; font-size:17px; margin:0 0 5px; line-height:1.35; }
+  .pub .meta{ font-size:13.5px; color:var(--slate); }
   .pub .meta .role{ color:var(--cyan-tx); }
+  .pub .meta a:hover{ color:var(--cyan-tx); }
 
-  /* ---------- TOOLCHAIN ---------- */
-  .tool-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-  @media (max-width:720px){ .tool-grid{ grid-template-columns:1fr; gap:20px; } }
+  .tool-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:26px; }
   .tool-col .lbl{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ember-tx); margin-bottom:14px; }
   .tool-col ul{ list-style:none; margin:0; padding:0; }
   .tool-col li{ padding:7px 0; border-top:1px solid var(--line); color:var(--paper); font-size:15px; }
   .tool-col li:first-child{ border-top:none; }
 
-  /* ---------- CONTACT ---------- */
   .contact{ text-align:center; padding:100px 0; border-bottom:none; }
   .contact h2{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:clamp(30px,5vw,52px); letter-spacing:-.02em; margin:0 0 10px; }
-  .contact p{ color:var(--slate); max-width:520px; margin:0 auto 30px; }
+  .contact p{ color:var(--slate); max-width:520px; margin:0 auto 12px; }
+  .contact .phone{ font-family:"IBM Plex Mono",monospace; font-size:14px; color:var(--slate); margin:0 auto 28px; }
   .contact .cta-row{ justify-content:center; }
 
   footer{ padding:30px 0 50px; }
@@ -224,7 +160,7 @@
       <div class="nav-links">
         <a href="#about">about</a>
         <a href="#research">research</a>
-        <a href="#programs">programs</a>
+        <a href="#palki">palki</a>
         <a href="#projects">projects</a>
         <a href="#publications">publications</a>
         <a href="#contact">contact</a>
@@ -238,21 +174,20 @@
   <canvas id="flow"></canvas>
   <div class="hero-mask"></div>
   <div class="wrap hero-in">
-    <p class="eyebrow">Mechanical Design Engineer I (R&amp;D) · CFD &amp; Aerospace</p>
+    <p class="eyebrow">Mechanical Engineer · CFD &amp; Aerodynamic Simulation</p>
     <h1>Mahir Labib Chowdhury</h1>
-    <p class="h1-sub">Turning airflow, structures, and CAD into validated hardware.</p>
+    <p class="h1-sub">High-fidelity CFD, turbulence modeling, and aerodynamic simulation.</p>
     <p class="lede">
-      I design and simulate mechanical systems where the physics has to be right —
-      from <span class="hi">CFD validation against published benchmarks</span> to
-      reverse-engineered vehicle assemblies built for accurate simulation. R&amp;D engineer
-      at Palki Motors, research member at AASML, based in Dhaka.
+      Mechanical engineering graduate focused on <span class="hi">computational fluid dynamics,
+      turbulence modeling, and aerodynamic simulation</span> — with a research goal of contributing
+      to computational and experimental work in hypersonic flight. R&amp;D engineer at Palki Motors,
+      research member at AASML, based in Dhaka.
     </p>
     <div class="cta-row">
-      <!-- EDIT: email, resume filename, GitHub, LinkedIn -->
-      <a class="btn btn-primary" href="mailto:you@example.com">Get in touch →</a>
+      <a class="btn btn-primary" href="mailto:mahirlc12@gmail.com">Get in touch →</a>
       <a class="btn btn-ghost" href="Mahir_Labib_Chowdhury_CV.pdf" download>Résumé ↓</a>
-      <a class="btn btn-ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/mahirlc12-glitch" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/mahir-labib-chowdhury" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -261,7 +196,7 @@
   <div class="wrap"><div class="readout-in">
     <div class="stat"><div class="v">+6.49<span class="u">%</span></div><div class="k">L/D gain · NACA 23012</div></div>
     <div class="stat"><div class="v">~2.6<span class="u">%</span></div><div class="k">DPM validation dev.</div></div>
-    <div class="stat"><div class="v">Mach 7</div><div class="k">re-entry SSD study</div></div>
+    <div class="stat"><div class="v">~33<span class="u">%</span></div><div class="k">drag ↓ · swept fins</div></div>
     <div class="stat"><div class="v">3.62<span class="u">/4</span></div><div class="k">B.Sc. ME · AUST</div></div>
   </div></div>
 </div>
@@ -274,24 +209,33 @@
       <div class="about-grid">
         <div class="reveal">
           <p>
-            I'm a mechanical design engineer working at the intersection of
+            I'm a mechanical engineer working at the intersection of
             <span class="hi">computational fluid dynamics, aerodynamics, and precision CAD</span>.
-            My day-to-day at Palki Motors is mechanical design and CAD reverse-engineering across
-            vehicle R&amp;D programs; my research life at AASML is CFD — particle deposition,
-            hypersonic re-entry aerodynamics, and heat-transfer enhancement.
+            My work spans high-fidelity CFD analysis, structured mesh generation, and validation
+            against experimental data — with a habit of not trusting a simulation until it matches
+            something real: a NASA data set, a published benchmark, or a physical part in my hand.
           </p>
-          <p style="margin-top:18px">
-            What ties it together is a habit of not trusting a simulation until it matches
-            something real — a NASA data set, a published paper, or a physical part in my hand.
-            That validation-first mindset is what I bring to every model.
-          </p>
+          <div class="interests">
+            <b>Research interests</b>
+            Turbulence modeling &amp; transition prediction · hypersonic &amp; high-speed aerodynamics
+            and heat mitigation · boundary-layer transition and stability · plasma flow control ·
+            fluid–structure interaction · experimental aerodynamics.
+          </div>
         </div>
-        <div class="now reveal">
-          <div class="lbl">Currently</div>
-          <div class="now-row"><span class="dot">▹</span><div class="txt"><b>Palki Motors</b><span>Mechanical Design Engineer I (R&amp;D) · vehicle R&amp;D</span></div></div>
-          <div class="now-row"><span class="dot">▹</span><div class="txt"><b>AASML, AUST</b><span>Research Member · CFD &amp; aerospace</span></div></div>
-          <div class="now-row"><span class="dot">▹</span><div class="txt"><b>Grad study · Fall 2027</b><span>CFD &amp; aerospace research focus</span></div></div>
-          <div class="now-row"><span class="dot">▹</span><div class="txt"><b>Dhaka, Bangladesh</b><span>CSWA 235/240 · IELTS 8.0</span></div></div>
+        <div class="side reveal">
+          <div class="panel">
+            <div class="lbl">Currently</div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>Palki Motors</b><span>Mechanical Engineer I (R&amp;D)</span></div></div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>AASML, AUST</b><span>Research Member · CFD &amp; aerospace</span></div></div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>Grad study · Fall 2027</b><span>CFD &amp; aerospace research focus</span></div></div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>Dhaka, Bangladesh</b><span>CSWA 235/240 · IELTS 8.0</span></div></div>
+          </div>
+          <div class="panel">
+            <div class="lbl">Education</div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>B.Sc. Mechanical Engineering</b><span>AUST · 2020–2025 · CGPA 3.62/4.00</span></div></div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>Ranked 11th of class</b><span>Half Free Tuition Award (HFTA)</span></div></div>
+            <div class="p-row"><span class="dot">▹</span><div class="txt"><b>HSC · 2019</b><span>Birshrestha Munshi Abdur Rouf Public College · GPA 5.00/5.00</span></div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -302,66 +246,48 @@
     <div class="wrap">
       <div class="sta reveal"><span class="no">STA·02</span><h2>Research</h2><span class="rule"></span></div>
       <p class="intro reveal">
-        CFD and aerospace work at <strong>AASML (Ahsanullah University of Science &amp; Technology)</strong>,
-        aimed at publication and conference presentation. Every study is anchored to a validation benchmark
-        before any new geometry is explored.
+        CFD and thermofluids research at <strong>AASML — AUST Applied Simulation and Modeling Lab</strong>,
+        with manuscripts in preparation for peer-reviewed journals and conferences. Every study is
+        anchored to a validation benchmark before new geometry is explored.
       </p>
       <div class="grid g-2">
         <div class="card reveal">
-          <span class="tag">CFD · DPM</span>
-          <h3>Particle deposition in pipe flow</h3>
+          <span class="tag">FLOW PHYSICS · CFD–DPM</span>
+          <h3>Turbulent particle deposition in pipes</h3>
           <p>
-            Lagrangian discrete-phase modelling of anthracite particle deposition in turbulent
-            pipe flow, validated against Shuvo et&nbsp;al. (2022) in ANSYS Fluent with RNG k-ε and
-            enhanced wall treatment. Found Reynolds number acts as an independent deposition
-            parameter below St ≈ 0.4.
+            Reproduced the benchmark aerosol deposition study of Shuvo et&nbsp;al. (2022) with an
+            Eulerian–Lagrangian Discrete Phase Model in ANSYS Fluent 2024&nbsp;R2, capturing deposition
+            efficiency vs. Stokes number to within ~2.6% of published results. Extended validation
+            across ten particle diameters and Re = 5,000–10,000, resolving the turbophoretic transport
+            that drives particles toward the wall.
           </p>
-          <p class="metric">// ~2.6% avg deviation vs. published benchmark</p>
-          <div class="chips"><span class="chip">ANSYS Fluent</span><span class="chip">RNG k-ε</span><span class="chip">Lagrangian DPM</span></div>
+          <p class="metric">// ~2.6% avg deviation · Re 5k–10k · manuscript in prep</p>
+          <div class="chips"><span class="chip">ANSYS Fluent 2024 R2</span><span class="chip">Lagrangian DPM</span><span class="chip">Turbophoresis</span></div>
         </div>
         <div class="card reveal">
-          <span class="tag">HYPERSONICS</span>
-          <h3>Re-entry capsule aerodynamics</h3>
+          <span class="tag">AASML · NEXTGEN ENERGY SYSTEMS</span>
+          <h3>Hypersonic re-entry (CEV) aerodynamics</h3>
           <p>
-            Shock stand-off distance for a CEV-type re-entry capsule validated against
-            Juhany et&nbsp;al. (2024) across Mach 1.4–7, with a heat-flux extraction workflow
-            established in CFD-Post for high-enthalpy surface loading.
+            CFD of a hypersonic Crew Exploration Vehicle re-entry capsule using a density-based
+            compressible solver in ANSYS Fluent (SST k–ω, Roe-FDS flux, Sutherland viscosity).
+            Extracting mean shock stand-off distance vs. Mach number across capsule geometries, and
+            characterizing bow-shock formation ahead of the heat shield with wake vortex structures.
           </p>
-          <p class="metric">// ~9% avg SSD deviation, Mach 1.4–7</p>
-          <div class="chips"><span class="chip">Supersonic/hypersonic</span><span class="chip">Shock analysis</span><span class="chip">Heat flux</span></div>
-        </div>
-        <div class="card reveal">
-          <span class="tag">CONFERENCE · BSME ICTE 2026</span>
-          <h3>Twisted-Corrugated Circular Pipe (TCCP)</h3>
-          <p>
-            Heat-transfer and flow study of a parametric helical-groove pipe geometry, with a
-            planned migration from Fluent to OpenFOAM for parametric sweeps. Abstract accepted;
-            corresponding author.
-          </p>
-          <div class="chips"><span class="chip">OpenFOAM</span><span class="chip">SOLIDWORKS</span><span class="chip">snappyHexMesh</span><span class="chip">simpleFoam</span></div>
-        </div>
-        <div class="card reveal">
-          <span class="tag">ML + CFD</span>
-          <h3>ML-assisted heat exchanger characterization</h3>
-          <p>
-            Second conference study exploring machine-learning surrogate characterization of
-            TPMS (triply periodic minimal surface) heat-exchange surfaces — bridging CFD data
-            with data-driven prediction.
-          </p>
-          <div class="chips"><span class="chip">TPMS surfaces</span><span class="chip">Surrogate modelling</span><span class="chip">Heat transfer</span></div>
+          <p class="metric">// density-based · manuscript in prep</p>
+          <div class="chips"><span class="chip">Density-based solver</span><span class="chip">SST k–ω</span><span class="chip">Shock stand-off</span><span class="chip">Heat shield</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS -->
-  <section id="programs">
+  <!-- PALKI PROGRAMS -->
+  <section id="palki">
     <div class="wrap">
-      <div class="sta reveal"><span class="no">STA·03</span><h2>Vehicle Programs</h2><span class="rule"></span></div>
+      <div class="sta reveal"><span class="no">STA·03</span><h2>Palki Motors — R&amp;D</h2><span class="rule"></span></div>
       <p class="intro reveal">
-        R&amp;D at <strong>Palki Motors</strong>, where I reverse-engineer existing vehicle hardware
-        into accurate CAD for proper simulation, and design chassis and body structures for fabrication —
-        working across L7e vehicle classes.
+        Mechanical R&amp;D at <strong>Palki Motors</strong> across L7e vehicle classes —
+        reverse-engineering existing hardware into accurate CAD for proper simulation, and designing
+        chassis and body structures for fabrication.
       </p>
       <div class="grid g-2">
         <div class="card program reveal">
@@ -369,9 +295,10 @@
           <span class="tag">L7e MICROCAR</span>
           <h3>Microcar program</h3>
           <p>
-            Reverse-engineered existing hardware into simulation-ready CAD, and contributed
-            chassis and body design for fabrication. Work spanned frame architecture, master
-            datums, and dimensional correction verified against physical measurement.
+            Contributor on an L7e microcar program: reverse-engineered existing hardware into
+            simulation-ready CAD and contributed chassis and body design for fabrication. Work
+            spanned frame architecture, master datums, and dimensional correction verified against
+            physical measurement.
           </p>
           <div class="chips"><span class="chip">Reverse engineering</span><span class="chip">Chassis design</span><span class="chip">Body fabrication</span><span class="chip">SolidWorks</span></div>
         </div>
@@ -380,12 +307,12 @@
           <span class="tag">L7e ELECTRIC PICKUP</span>
           <h3>Electric pickup program</h3>
           <p>
-            Reverse-engineered drivetrain, steering, and brake hardware into accurate CAD for
-            simulation, and worked on chassis and body structures for fabrication — including
-            gear-ratio verification cross-checked against physical parts and steering hardpoint
-            packaging.
+            Mechanical R&amp;D on Bangladesh's first locally-built L7e electric pickup — designing and
+            modifying components in Onshape, producing engineering drawings and bills of materials,
+            and tracking work through ClickUp. Reverse-engineered drivetrain, steering, and brake
+            hardware into accurate CAD for simulation.
           </p>
-          <div class="chips"><span class="chip">Reverse engineering</span><span class="chip">Drivetrain</span><span class="chip">Steering geometry</span><span class="chip">Chassis / body</span></div>
+          <div class="chips"><span class="chip">Onshape</span><span class="chip">Drawings &amp; BOMs</span><span class="chip">Reverse engineering</span><span class="chip">ClickUp</span></div>
         </div>
       </div>
     </div>
@@ -394,54 +321,49 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="wrap">
-      <div class="sta reveal"><span class="no">STA·04</span><h2>Projects</h2><span class="rule"></span></div>
-      <p class="intro reveal">
-        Aerospace design concepts and academic work spanning airfoil optimization, structural
-        simulation, and launch-vehicle components.
-      </p>
-
+      <div class="sta reveal"><span class="no">STA·04</span><h2>Research &amp; Academic Projects</h2><span class="rule"></span></div>
       <div class="grid g-3">
         <div class="card reveal">
-          <div class="fig"><span class="fig-cap">figure — grid fin CFD</span></div>
-          <span class="tag">CONCEPT · REUSABLE BOOSTER</span>
-          <h3>Actuated titanium grid fin</h3>
-          <p>Ti-6Al-4V grid fin for a reusable booster — OpenFOAM CFD across Mach 0.5–2.0, structural FEA, and lattice optimization.</p>
-          <div class="chips"><span class="chip">OpenFOAM</span><span class="chip">FEA</span><span class="chip">Ti-6Al-4V</span></div>
+          <div class="fig"><span class="fig-cap">figure — C-grid / polars</span></div>
+          <span class="tag">CFD FRAMEWORK</span>
+          <h3>High-fidelity NACA 0012 simulation</h3>
+          <p>Validated ANSYS Fluent framework (k–ω SST) for aerodynamic loading at Re = 3×10⁶. Structured C-grid with near-wall refinement (y⁺ &lt; 1) and a grid-independence study; predicted C<sub>L</sub>, C<sub>D</sub>, L/D across 0–20° AoA, validated against NASA experimental data.</p>
+          <div class="chips"><span class="chip">ANSYS Fluent</span><span class="chip">k–ω SST</span><span class="chip">C-grid · y⁺&lt;1</span></div>
         </div>
         <div class="card reveal">
-          <div class="fig"><span class="fig-cap">figure — nozzle CHT</span></div>
-          <span class="tag">CONCEPT · PROPULSION</span>
-          <h3>Regen-cooled nozzle</h3>
-          <p>Regeneratively cooled nozzle with conjugate heat transfer (chtMultiRegionFoam), GRCop-42, targeting laser powder-bed fusion.</p>
-          <div class="chips"><span class="chip">Conjugate HT</span><span class="chip">GRCop-42</span><span class="chip">LPBF / AM</span></div>
+          <div class="fig"><span class="fig-cap">figure — fin comparison</span></div>
+          <span class="tag">AERODYNAMICS · Mach &gt; 1</span>
+          <h3>Transonic rocket fin optimization</h3>
+          <p>Investigated compressibility effects and high-speed aerodynamic performance. Compared trapezoidal, swept, and high-aspect-ratio fin geometries under controlled conditions, showing <span class="metric">~33% drag reduction</span> with swept configurations.</p>
+          <div class="chips"><span class="chip">Supersonic CFD</span><span class="chip">Fin geometry</span><span class="chip">Drag reduction</span></div>
         </div>
         <div class="card reveal">
           <div class="fig"><span class="fig-cap">figure — airfoil polars</span></div>
           <span class="tag">AERODYNAMICS</span>
-          <h3>NACA 23012 optimization</h3>
-          <p>Airfoil shape optimization delivering a <span class="metric">6.49% L/D improvement</span>, plus NACA 0012 CFD validation against NASA reference data.</p>
-          <div class="chips"><span class="chip">XFLR5</span><span class="chip">CFD</span><span class="chip">Optimization</span></div>
+          <h3>NACA 23012 airfoil optimization</h3>
+          <p>Parametric study varying camber, thickness, and leading-edge geometry at Re = 2×10⁶, balancing lift, drag, and structural constraints. Automated sweeps in XFOIL/XFLR5 achieved a <span class="metric">6.49% L/D improvement</span>.</p>
+          <div class="chips"><span class="chip">XFOIL / XFLR5</span><span class="chip">Parametric study</span><span class="chip">Optimization</span></div>
         </div>
         <div class="card reveal">
           <div class="fig"><span class="fig-cap">figure — FEA / stress</span></div>
-          <span class="tag">THESIS</span>
-          <h3>Flywheel energy storage</h3>
-          <p>System modelling in MATLAB/Simulink with structural and thermal FEA in ANSYS for a flywheel energy-storage system.</p>
-          <div class="chips"><span class="chip">MATLAB/Simulink</span><span class="chip">ANSYS</span><span class="chip">Structural/Thermal</span></div>
+          <span class="tag">UNDERGRADUATE THESIS</span>
+          <h3>Flywheel energy storage system</h3>
+          <p>Designed a flywheel-based storage system delivering <span class="metric">&gt;2.4 kW</span> burst power. Coupled MATLAB/Simulink transient model (rotational dynamics, charge/discharge cycles, mechanical losses) with ANSYS Mechanical structural and thermal analysis.</p>
+          <div class="chips"><span class="chip">MATLAB/Simulink</span><span class="chip">ANSYS Mechanical</span><span class="chip">Structural/Thermal</span></div>
         </div>
         <div class="card reveal">
-          <div class="fig"><span class="fig-cap">figure — transonic fin</span></div>
-          <span class="tag">AERODYNAMICS</span>
-          <h3>Transonic rocket fin</h3>
-          <p>Fin optimization in the transonic/supersonic regime (Mach &gt; 1) and grid-fin aerodynamics validation against ICAS reference data.</p>
-          <div class="chips"><span class="chip">Supersonic CFD</span><span class="chip">k-ω SST</span><span class="chip">Poly-Hexcore</span></div>
+          <div class="fig"><span class="fig-cap">figure — mechanism</span></div>
+          <span class="tag">MECHANISM DESIGN</span>
+          <h3>Transformable car–drone</h3>
+          <p>Concept and mechanism design for a hybrid car–drone transformable vehicle — kinematics and packaging of the transformation.</p>
+          <div class="chips"><span class="chip">Mechanism design</span><span class="chip">Kinematics</span></div>
         </div>
         <div class="card reveal">
-          <div class="fig"><span class="fig-cap">figure — mechanism / DAQ</span></div>
-          <span class="tag">MECHANISM · DAQ</span>
-          <h3>Transformable &amp; VAWT builds</h3>
-          <p>Hybrid car–drone transformable mechanism, plus a fabricated vertical-axis wind turbine with LabVIEW data acquisition.</p>
-          <div class="chips"><span class="chip">Mechanism design</span><span class="chip">LabVIEW DAQ</span><span class="chip">Fabrication</span></div>
+          <div class="fig"><span class="fig-cap">figure — VAWT build</span></div>
+          <span class="tag">FABRICATION · DAQ</span>
+          <h3>Vertical-axis wind turbine</h3>
+          <p>Fabricated a vertical-axis wind turbine with LabVIEW data acquisition for performance measurement.</p>
+          <div class="chips"><span class="chip">Fabrication</span><span class="chip">LabVIEW DAQ</span></div>
         </div>
       </div>
     </div>
@@ -450,20 +372,57 @@
   <!-- PUBLICATIONS -->
   <section id="publications">
     <div class="wrap">
-      <div class="sta reveal"><span class="no">STA·05</span><h2>Publications &amp; Experience</h2><span class="rule"></span></div>
+      <div class="sta reveal"><span class="no">STA·05</span><h2>Publications</h2><span class="rule"></span></div>
       <div class="reveal">
         <div class="pub">
-          <div class="yr">2026</div>
+          <div class="yr">2025</div>
           <div>
-            <h3>Twisted-Corrugated Circular Pipe: heat transfer &amp; flow characterization</h3>
-            <div class="meta">Abstract accepted — <span class="role">corresponding author</span> · BSME ICTE 2026 (Paper ID 280)</div>
+            <h3>Biopolymer-Based Hydrogel with Electrostatic Reinforcement for Bone Regeneration</h3>
+            <div class="meta"><span class="role">Third author</span> · book chapter, <em>Applications of Biopolymers and Biocomposites</em>, Elsevier · DOI 10.1016/B978-0-443-33391-0.00019-4</div>
           </div>
         </div>
         <div class="pub">
           <div class="yr">2025</div>
           <div>
-            <h3>Two book chapters — Elsevier</h3>
-            <div class="meta">Accepted · <span class="role">second &amp; third author</span></div>
+            <h3>3D Printing for Cranioplasty Implants</h3>
+            <div class="meta"><span class="role">Second author</span> · book chapter, <em>3D Printing for Biomedical Engineering</em>, Elsevier · DOI 10.1016/B978-0-443-16100-1.00019-9</div>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div>
+            <h3>Combined Swirl and Periodic-Roughness Effects on Aerosol Particle Deposition in a Twisted-Corrugated Circular Pipe: A CFD–DPM Study</h3>
+            <div class="meta"><span class="role">First author</span> · abstract accepted, 10th BSME ICTE 2026, BUET · Paper ID 280</div>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div>
+            <h3>Machine Learning-Assisted Thermal-Hydraulic Characterization of Bio-Inspired Dimple and Leaf-Vein Heat Exchanger Surfaces Benchmarked Against TPMS Structures</h3>
+            <div class="meta"><span class="role">Second author</span> · abstract accepted, 10th BSME ICTE 2026, BUET · Paper ID 331</div>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="yr">2026</div>
+          <div>
+            <h3>Effects of a Parametric Sinusoidal Heat-Shield Profile on the Aerodynamic and Aerothermodynamic Characteristics of the Orion Reentry Vehicle</h3>
+            <div class="meta"><span class="role">Fourth author</span> · abstract accepted, 10th BSME ICTE 2026, BUET · Paper ID 281</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & HONORS -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sta reveal"><span class="no">STA·06</span><h2>Experience &amp; Honors</h2><span class="rule"></span></div>
+      <div class="reveal">
+        <div class="pub">
+          <div class="yr">2023</div>
+          <div>
+            <h3>Teaching Assistant — Instrumentation &amp; Measurement</h3>
+            <div class="meta">AUST · selected to run LabVIEW tutorial sessions for undergraduates</div>
           </div>
         </div>
         <div class="pub">
@@ -480,6 +439,13 @@
             <div class="meta">Top-6 finish, Bangladesh</div>
           </div>
         </div>
+        <div class="pub">
+          <div class="yr">Member</div>
+          <div>
+            <h3>Student memberships</h3>
+            <div class="meta">IMechE AUST Student Chapter · AUST Robotics Club · AUST Innovation and Design Club</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -487,19 +453,23 @@
   <!-- TOOLCHAIN -->
   <section id="toolchain">
     <div class="wrap">
-      <div class="sta reveal"><span class="no">STA·06</span><h2>Toolchain</h2><span class="rule"></span></div>
+      <div class="sta reveal"><span class="no">STA·07</span><h2>Technical Skills</h2><span class="rule"></span></div>
       <div class="tool-grid reveal">
         <div class="tool-col">
+          <div class="lbl">Computational Fluid Dynamics</div>
+          <ul><li>ANSYS Fluent (steady/unsteady)</li><li>k–ω SST turbulence modeling</li><li>Structured mesh · y⁺ control</li><li>Grid independence &amp; validation</li></ul>
+        </div>
+        <div class="tool-col">
           <div class="lbl">CAD &amp; Design</div>
-          <ul><li>SolidWorks (CSWA)</li><li>Onshape</li><li>GD&amp;T · DFM</li><li>Reverse engineering</li></ul>
+          <ul><li>SolidWorks (CSWA)</li><li>Fusion 360 · Onshape</li><li>AutoCAD · KeyShot</li></ul>
         </div>
         <div class="tool-col">
-          <div class="lbl">Simulation</div>
-          <ul><li>ANSYS Fluent</li><li>ANSYS Mechanical</li><li>OpenFOAM</li><li>XFLR5</li></ul>
+          <div class="lbl">Analysis &amp; Numerics</div>
+          <ul><li>FEA — ANSYS Mechanical</li><li>XFOIL · XFLR5</li><li>Finite Volume Method</li><li>LabVIEW data acquisition</li></ul>
         </div>
         <div class="tool-col">
-          <div class="lbl">Modelling &amp; Data</div>
-          <ul><li>MATLAB / Simulink</li><li>LabVIEW DAQ</li><li>CFD-Post</li><li>Git / GitHub</li></ul>
+          <div class="lbl">Programming</div>
+          <ul><li>MATLAB</li><li>Python</li><li>C · C++</li></ul>
         </div>
       </div>
     </div>
@@ -510,11 +480,11 @@
     <div class="wrap">
       <h2 class="reveal">Let's build something that flies.</h2>
       <p class="reveal">Open to research collaborations, aerospace/CFD roles, and graduate opportunities for Fall 2027.</p>
+      <p class="phone reveal">+880 1747088882 · Dhaka, Bangladesh</p>
       <div class="cta-row reveal">
-        <!-- EDIT: email, GitHub, LinkedIn -->
-        <a class="btn btn-primary" href="mailto:you@example.com">you@example.com</a>
-        <a class="btn btn-ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-primary" href="mailto:mahirlc12@gmail.com">mahirlc12@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/mahirlc12-glitch" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/mahir-labib-chowdhury" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -530,7 +500,6 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* ---------- theme toggle ---------- */
   (function(){
     const root = document.documentElement;
     const btn = document.getElementById('theme');
@@ -546,121 +515,49 @@
     try{ saved = localStorage.getItem('theme'); }catch(e){}
     const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
     apply(saved || (prefersLight ? 'light' : 'dark'));
-    btn.addEventListener('click', ()=>{
-      apply(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
-    });
+    btn.addEventListener('click', ()=> apply(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
   })();
 
-  /* ---------- scroll reveal ---------- */
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   },{ threshold:.12 });
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  /* ---------- hero flow field ----------
-     Particles advected by a synthesized velocity field that accelerates
-     around an implied airfoil, colored by local speed with a CFD-style
-     colormap. Adapts to theme; respects prefers-reduced-motion.        */
+  /* hero flow field — particles advected around an implied airfoil,
+     colored by local speed with a CFD-style colormap. Theme-aware;
+     respects prefers-reduced-motion. */
   (function(){
     const canvas = document.getElementById('flow');
     const ctx = canvas.getContext('2d');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let W,H,DPR,particles=[],raf=null,solidFill='#0A0F1A',fadeFill='rgba(10,15,26,0.16)';
-
-    const stops = [
-      [0.00,[27,58,107]],[0.30,[55,224,196]],[0.55,[120,220,120]],
-      [0.78,[246,166,35]],[1.00,[255,94,67]]
-    ];
-    function cmap(t){
-      t = Math.max(0,Math.min(1,t));
-      for(let i=0;i<stops.length-1;i++){
-        const [a,ca]=stops[i], [b,cb]=stops[i+1];
-        if(t>=a && t<=b){ const f=(t-a)/(b-a);
-          return `rgb(${ca[0]+(cb[0]-ca[0])*f|0},${ca[1]+(cb[1]-ca[1])*f|0},${ca[2]+(cb[2]-ca[2])*f|0})`; }
-      }
-      return 'rgb(255,94,67)';
-    }
-    function hexToRgb(hex){
-      hex = (hex||'').trim().replace('#','');
-      if(hex.length===3) hex = hex.split('').map(c=>c+c).join('');
-      const n = parseInt(hex,16);
-      return [ (n>>16)&255, (n>>8)&255, n&255 ];
-    }
-    function readColors(){
-      const bg = getComputedStyle(document.documentElement).getPropertyValue('--ink');
-      const [r,g,b] = hexToRgb(bg);
-      solidFill = `rgb(${r},${g},${b})`;
-      fadeFill  = `rgba(${r},${g},${b},0.16)`;
-    }
-
-    function resize(){
-      DPR = Math.min(window.devicePixelRatio||1, 2);
-      W = canvas.clientWidth; H = canvas.clientHeight;
-      canvas.width = W*DPR; canvas.height = H*DPR;
-      ctx.setTransform(DPR,0,0,DPR,0,0);
-    }
-    function velocity(x,y){
-      let vx = 1.0, vy = 0;
-      const ox = W*0.30, oy = H*0.52;
-      const dx = x-ox, dy = y-oy;
-      const r2 = dx*dx + dy*dy;
-      const R = Math.min(W,H)*0.22;
-      const s = (R*R)/(r2+R*R*0.35);
-      vx += s*(dy)/R*1.4; vy += -s*(dx)/R*1.4; vy += s*0.25;
-      vy += Math.sin(x*0.006 + y*0.004)*0.12;
-      return [vx,vy];
-    }
-    function spawn(p){ p.x = -20 - Math.random()*W*0.3; p.y = Math.random()*H; p.life = 60 + Math.random()*160; }
-    function makeParticles(){
-      const target = Math.round(Math.min(W,900)/900 * 900);
-      particles = [];
-      for(let i=0;i<target;i++){ const p={}; spawn(p); p.x = Math.random()*W; particles.push(p); }
-    }
-    function step(){
-      ctx.fillStyle = fadeFill; ctx.fillRect(0,0,W,H);
-      ctx.lineWidth = 1.1;
-      for(const p of particles){
-        const [vx,vy] = velocity(p.x,p.y);
-        const sp = Math.hypot(vx,vy);
-        const nx = p.x + vx*1.5, ny = p.y + vy*1.5;
-        ctx.strokeStyle = cmap((sp-0.7)/1.9); ctx.globalAlpha = 0.55;
-        ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(nx,ny); ctx.stroke();
-        p.x = nx; p.y = ny; p.life--;
-        if(p.x>W+20 || p.y<-20 || p.y>H+20 || p.life<=0) spawn(p);
-      }
-      ctx.globalAlpha = 1; raf = requestAnimationFrame(step);
-    }
-    function staticFrame(){
-      ctx.fillStyle = solidFill; ctx.fillRect(0,0,W,H);
-      ctx.lineWidth = 1.1; ctx.globalAlpha = .6;
-      for(let i=0;i<1400;i++){
-        const x=Math.random()*W, y=Math.random()*H;
-        const [vx,vy]=velocity(x,y); const sp=Math.hypot(vx,vy);
-        ctx.strokeStyle=cmap((sp-0.7)/1.9);
-        ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(x+vx*4,y+vy*4); ctx.stroke();
-      }
-      ctx.globalAlpha=1;
-    }
-    function init(){
-      readColors(); resize();
-      ctx.fillStyle=solidFill; ctx.fillRect(0,0,W,H);
-      if(reduce){ staticFrame(); return; }
-      makeParticles(); step();
-    }
-
+    const stops = [[0.00,[27,58,107]],[0.30,[55,224,196]],[0.55,[120,220,120]],[0.78,[246,166,35]],[1.00,[255,94,67]]];
+    function cmap(t){ t=Math.max(0,Math.min(1,t));
+      for(let i=0;i<stops.length-1;i++){ const [a,ca]=stops[i],[b,cb]=stops[i+1];
+        if(t>=a&&t<=b){ const f=(t-a)/(b-a);
+          return `rgb(${ca[0]+(cb[0]-ca[0])*f|0},${ca[1]+(cb[1]-ca[1])*f|0},${ca[2]+(cb[2]-ca[2])*f|0})`; } }
+      return 'rgb(255,94,67)'; }
+    function hexToRgb(hex){ hex=(hex||'').trim().replace('#',''); if(hex.length===3) hex=hex.split('').map(c=>c+c).join(''); const n=parseInt(hex,16); return [(n>>16)&255,(n>>8)&255,n&255]; }
+    function readColors(){ const bg=getComputedStyle(document.documentElement).getPropertyValue('--ink'); const [r,g,b]=hexToRgb(bg); solidFill=`rgb(${r},${g},${b})`; fadeFill=`rgba(${r},${g},${b},0.16)`; }
+    function resize(){ DPR=Math.min(window.devicePixelRatio||1,2); W=canvas.clientWidth; H=canvas.clientHeight; canvas.width=W*DPR; canvas.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+    function velocity(x,y){ let vx=1.0,vy=0; const ox=W*0.30,oy=H*0.52; const dx=x-ox,dy=y-oy; const r2=dx*dx+dy*dy; const R=Math.min(W,H)*0.22; const s=(R*R)/(r2+R*R*0.35); vx+=s*dy/R*1.4; vy+=-s*dx/R*1.4; vy+=s*0.25; vy+=Math.sin(x*0.006+y*0.004)*0.12; return [vx,vy]; }
+    function spawn(p){ p.x=-20-Math.random()*W*0.3; p.y=Math.random()*H; p.life=60+Math.random()*160; }
+    function makeParticles(){ const target=Math.round(Math.min(W,900)/900*900); particles=[]; for(let i=0;i<target;i++){ const p={}; spawn(p); p.x=Math.random()*W; particles.push(p); } }
+    function step(){ ctx.fillStyle=fadeFill; ctx.fillRect(0,0,W,H); ctx.lineWidth=1.1;
+      for(const p of particles){ const [vx,vy]=velocity(p.x,p.y); const sp=Math.hypot(vx,vy); const nx=p.x+vx*1.5,ny=p.y+vy*1.5;
+        ctx.strokeStyle=cmap((sp-0.7)/1.9); ctx.globalAlpha=0.55; ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(nx,ny); ctx.stroke();
+        p.x=nx; p.y=ny; p.life--; if(p.x>W+20||p.y<-20||p.y>H+20||p.life<=0) spawn(p); }
+      ctx.globalAlpha=1; raf=requestAnimationFrame(step); }
+    function staticFrame(){ ctx.fillStyle=solidFill; ctx.fillRect(0,0,W,H); ctx.lineWidth=1.1; ctx.globalAlpha=.6;
+      for(let i=0;i<1400;i++){ const x=Math.random()*W,y=Math.random()*H; const [vx,vy]=velocity(x,y); const sp=Math.hypot(vx,vy);
+        ctx.strokeStyle=cmap((sp-0.7)/1.9); ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(x+vx*4,y+vy*4); ctx.stroke(); } ctx.globalAlpha=1; }
+    function init(){ readColors(); resize(); ctx.fillStyle=solidFill; ctx.fillRect(0,0,W,H); if(reduce){ staticFrame(); return; } makeParticles(); step(); }
     let rt=null;
     window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(raf) cancelAnimationFrame(raf); init(); },180); });
     window.addEventListener('themechange',()=>{ if(raf){ cancelAnimationFrame(raf); raf=null; } init(); });
-
-    const header = document.querySelector('header');
-    const hio = new IntersectionObserver((es)=>{
-      es.forEach(e=>{ if(reduce) return;
-        if(e.isIntersecting){ if(!raf) step(); }
-        else { if(raf){ cancelAnimationFrame(raf); raf=null; } }
-      });
-    },{ threshold:0 });
+    const header=document.querySelector('header');
+    const hio=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(reduce) return; if(e.isIntersecting){ if(!raf) step(); } else { if(raf){ cancelAnimationFrame(raf); raf=null; } } }); },{ threshold:0 });
     hio.observe(header);
-
     init();
   })();
 </script>
